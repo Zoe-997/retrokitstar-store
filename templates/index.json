@@ -81,8 +81,12 @@
     "line_fHCcxA": {
       "type": "line",
       "settings": {
-        "padding_top": 40,
-        "padding_bottom": 52
+        "full_width": true,
+        "color_line": "#ebebeb",
+        "height": 1,
+        "style": "solid",
+        "padding_top": 30,
+        "padding_bottom": 30
       }
     },
     "collection_list_xgABjW": {
