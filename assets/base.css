@@ -125,6 +125,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 990px) {
+  .header {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+
   .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -2491,7 +2496,8 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .header__icons .shopify-app-block {
@@ -2533,14 +2539,28 @@ input[type='checkbox'] {
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
+  height: 2rem;
+  width: 2rem;
   padding: 0;
 }
 
 .header__icon--cart {
   position: relative;
-  margin-right: -1.2rem;
+  border-width: 2px;
+  border-style: solid;
+  width: auto;
+  height: auto;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.header__icon--cart svg {
+  width: 2rem;
 }
 
 .header__icon--menu[aria-expanded='true']::before {
@@ -2773,7 +2793,8 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item span {
-  transition: text-decoration var(--duration-short) ease;
+  transition: all var(--duration-short) ease;
+  font-weight: 700;
 }
 
 .header__menu-item:hover span {
@@ -2796,8 +2817,8 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  /* text-decoration: underline;
+  text-underline-offset: 0.3rem; */
 }
 
 .header__menu-item:hover .header__active-menu-item {
