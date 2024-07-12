@@ -95,19 +95,19 @@
         "featured_collection_3mRXWr": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "concept-kits"
           }
         },
         "featured_collection_pLyUbt": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "tracksuit"
           }
         },
         "featured_collection_9PhqwN": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "stussy"
           }
         }
       },
@@ -124,7 +124,7 @@
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
