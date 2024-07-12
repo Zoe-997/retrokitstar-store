@@ -7,7 +7,12 @@
           "type": "heading",
           "settings": {
             "heading": "YOUR FAVORITE RETRO KIT HERE",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "show_line": true,
+            "color_line": "#ffffff",
+            "height_line": 3,
+            "style_line": "solid",
+            "padding_bottom": 14
           }
         },
         "text": {
@@ -22,7 +27,7 @@
           "settings": {
             "button_label_1": "SHOP NOW",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -54,8 +59,9 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "RETRO KIT STAR",
-            "heading_size": "h1"
+            "heading": "<strong>RETRO KIT STAR<\/strong>",
+            "heading_size": "h1",
+            "heading_spacing": 2
           }
         },
         "text": {
@@ -117,6 +123,7 @@
         "featured_collection_9PhqwN"
       ],
       "settings": {
+        "alignment": "center",
         "title": "COLLECTION LIST",
         "heading_size": "h2",
         "image_ratio": "square",
@@ -132,12 +139,13 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "alignment": "center",
         "title": "BEST SELLING",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "concept-kits",
         "products_to_show": 6,
         "columns_desktop": 3,
         "full_width": false,
@@ -280,7 +288,8 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>#RETROKITSTAR ON INSTAGRAM<\/strong>",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "heading_spacing": 2
           }
         },
         "text_EKqUzx": {

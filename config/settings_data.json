@@ -3,7 +3,7 @@
     "logo": "shopify:\/\/shop_images\/logo-demo.png",
     "logo_width": 90,
     "favicon": "shopify:\/\/shop_images\/logo-demo.png",
-    "type_header_font": "poppins_n7",
+    "type_header_font": "poppins_n4",
     "heading_scale": 100,
     "type_body_font": "poppins_n4",
     "body_scale": 100,
@@ -43,9 +43,9 @@
     "card_shadow_horizontal_offset": 0,
     "card_shadow_vertical_offset": 4,
     "card_shadow_blur": 5,
-    "collection_card_style": "standard",
+    "collection_card_style": "card",
     "collection_card_image_padding": 0,
-    "collection_card_text_alignment": "left",
+    "collection_card_text_alignment": "center",
     "collection_card_color_scheme": "scheme-2",
     "collection_card_border_thickness": 0,
     "collection_card_border_opacity": 10,
@@ -130,6 +130,14 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "4935202709820522637": {
+        "type": "shopify:\/\/apps\/trustshop-product-reviews\/blocks\/review-embed\/18b0c4cc-5411-4b6e-922d-34fdc2f30ab9",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -159,7 +167,7 @@
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#ffffff",
+          "button_label": "#121212",
           "secondary_button_label": "#ffffff",
           "shadow": "#ffffff"
         }
