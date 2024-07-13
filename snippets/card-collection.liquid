@@ -81,7 +81,7 @@
           {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       {%- else -%}
-        <div class="card__content">
+        <div class="card__content color-{{ section.settings.collection_item_color }}">
           <div class="card__information">
             <h3 class="card__heading">
               <a
@@ -97,9 +97,11 @@
                 {%- else -%}
                   {{ 'onboarding.collection_title' | t }}
                 {%- endif -%}
-                {%- if card_collection.description == blank -%}
-                  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-                {%- endif %}
+                {% comment %}
+                  {%- if card_collection.description == blank -%}
+                    <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                  {%- endif %}
+                {% endcomment %}
               </a>
             </h3>
             {%- if card_collection.description != blank -%}
@@ -124,14 +126,19 @@
               {% endif %}
               class="full-unstyled-link"
             >
-              {%- if card_collection.title != blank -%}
-                {{- card_collection.title | escape -}}
-              {%- else -%}
-                {{ 'onboarding.collection_title' | t }}
-              {%- endif -%}
-              {%- if card_collection.featured_image or card_collection.description == blank -%}
-                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-              {%- endif %}
+              <span>
+                {%- if card_collection.title != blank -%}
+                  {{- card_collection.title | escape -}}
+                {%- else -%}
+                  {{ 'onboarding.collection_title' | t }}
+                {%- endif -%}
+              </span>
+              {% comment %}
+                {%- if card_collection.featured_image or card_collection.description == blank -%}
+                  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                {%- endif %}
+              {% endcomment %}
+              <span class="button button--secondary">{{ 'general.button.shop_now' | t }}</span>
             </a>
           </h3>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}

@@ -55,6 +55,9 @@
       "next_slide": "Slide right",
       "previous_slide": "Slide left",
       "name": "Slider"
+    },
+    "button": {
+      "shop_now": "Shop now"
     }
   },
   "newsletter": {
