@@ -40,6 +40,8 @@
         "logo_position": "middle-center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
+        "menu_item_dropdown": "3",
+        "menu_text_transform": "uppercase",
         "sticky_header_type": "none",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
