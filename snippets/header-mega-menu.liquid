@@ -4,11 +4,21 @@
   Usage:
   {% render 'header-mega-menu' %}
 {% endcomment %}
-
+{%- assign menu_item_dropdow = menu_dropdown | split: '|' -%}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
-      <li>
+      {%- liquid
+        assign is_menu_dropdown = false
+        assign menu_index = forloop.index
+      -%}
+      {%- for item in menu_item_dropdow -%}
+        {%- assign item_conver = item | plus: 0 -%}
+        {%- if menu_index == item_conver -%}
+          {%- assign is_menu_dropdown = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+      <li class="{% if is_menu_dropdown %}mega-dropdown{% else %}mega-mega{% endif %}">
         {%- if link.links != blank -%}
           <header-menu>
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
@@ -31,7 +41,7 @@
                 tabindex="-1"
               >
                 <ul
-                  class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                  class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
                 >
                   {%- for childlink in link.links -%}

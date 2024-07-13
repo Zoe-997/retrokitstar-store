@@ -698,7 +698,7 @@ summary .icon-caret {
   position: absolute;
   height: 0.6rem;
   right: 1.5rem;
-  top: calc(50% - 0.2rem);
+  top: calc(50% - 0.3rem);
 }
 
 summary::-webkit-details-marker {
@@ -2847,12 +2847,11 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  color: rgb(var(--color-foreground));
 }
 
 details[open] > .header__menu-item {
-  text-decoration: underline;
+  color: rgb(var(--color-foreground));
 }
 
 details[open]:hover > .header__menu-item {
