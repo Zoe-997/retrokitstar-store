@@ -73,7 +73,7 @@ slider-component.slider-component-full-width {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scroll-padding-left: 1rem;
+    scroll-padding-left: 0;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -89,9 +89,11 @@ slider-component.slider-component-full-width {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scroll-padding-left: 1.5rem;
+    scroll-padding-left: 0;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem;
+    column-gap: 0;
+    row-gap: 0;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
@@ -104,13 +106,13 @@ slider-component.slider-component-full-width {
 
   .slider.slider--tablet .slider__slide {
     margin-bottom: 0;
-    padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
-    padding-bottom: max(var(--focus-outline-padding), var(--shadow-padding-bottom));
+    /* padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
+    padding-bottom: max(var(--focus-outline-padding), var(--shadow-padding-bottom)); */
   }
 
-  .slider.slider--tablet.contains-card--standard .slider__slide:not(.collection-list__item--no-media) {
+  /* .slider.slider--tablet.contains-card--standard .slider__slide:not(.collection-list__item--no-media) {
     padding-bottom: var(--focus-outline-padding);
-  }
+  } */
 
   .slider.slider--tablet.contains-content-container .slider__slide {
     --focus-outline-padding: 0rem;
