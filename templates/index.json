@@ -314,10 +314,11 @@
     "featured_blog_NNUnEG": {
       "type": "featured-blog",
       "settings": {
-        "heading": "BLOG POSTS",
+        "heading": "<strong>BLOG POSTS<\/strong>",
         "heading_size": "h2",
-        "blog": "",
-        "post_limit": 3,
+        "heading_alignment": "center",
+        "blog": "news",
+        "post_limit": 4,
         "columns_desktop": 3,
         "color_scheme": "",
         "show_image": true,
