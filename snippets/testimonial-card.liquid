@@ -1,0 +1,67 @@
+{% comment %}
+  Renders an article card for a given blog with settings to either show the image or not.
+
+  Accepts:
+  - avatar: {String} The setting changes the aspect ratio of the avatar
+  - content: {String} The setting changes the aspect ratio of the content
+  - author: {String} The setting changes the aspect ratio of the author
+  - media_height: {String} The setting changes the height of the article image. Overrides media_aspect_ratio.
+  - show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
+  - show_date: {String} The setting either show the article date or not. If it's not included it will not show the image by default
+  - show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
+  - show_badge: {String} The setting either show the blog badge or not.
+  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+
+  Usage:
+  {% render 'testimonial-card' %}
+{% endcomment %}
+
+{%- liquid
+  assign ratio = 1
+  if media_aspect_ratio != null
+    assign ratio = media_aspect_ratio
+  endif
+-%}
+<div class="testimonial-card-wrapper card-wrapper">
+  <div
+    class="
+      card testimonial-card
+      {% if media_height and media_height != 'adapt' %} testimonial-card__image--{{ media_height }}{% endif %}
+      {% if avatar and show_image %} card--media{% else %} card--text{% endif %}
+    "
+  >
+    <div class="card__inner">
+      {%- if show_image and avatar != blank -%}
+        <div class="testimonial-card__image-wrapper card__media">
+          <div class="testimonial-card__image media media--hover-effect">
+            <img
+              src="{{ avatar.src | image_url: width: 533 }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+              alt="{{ avatar.src.alt | escape }}"
+              class="motion-reduce"
+              {% unless lazy_load == false %}
+                loading="lazy"
+              {% endunless %}
+              width="{{ avatar.width }}"
+              height="{{ avatar.height }}"
+            >
+            {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="card__content">
+      <div class="card__information">
+        {%- if content != blank -%}
+          <div class="article-card__excerpt rte-width">
+            {{ content | strip_html | truncatewords: 50 }}
+          </div>
+        {%- endif -%}
+
+        {%- if show_author and author != blank -%}
+          <p class="card__author">{{ author }}</p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>

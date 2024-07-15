@@ -320,8 +320,14 @@
     },
     "featured_blog": {
       "view_all": "View all",
-      "onboarding_title": "Blog post",
+      "onboarding_title": "Blog item",
       "onboarding_content": "Give your customers a summary of your blog post",
+      "read_more": "Read more"
+    },
+    "testimonial": {
+      "view_all": "View all",
+      "onboarding_author": "Testimonial author",
+      "onboarding_content": "Give your customers a summary of your testimonial post",
       "read_more": "Read more"
     },
     "featured_collection": {

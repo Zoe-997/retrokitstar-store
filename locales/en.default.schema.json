@@ -726,6 +726,40 @@
         "name": "Blog posts"
       }
     },
+    "testimonial": {
+      "name": "Testimonial",
+      "settings": {
+        "heading": {
+          "default": "Testimonial",
+          "label": "Heading"
+        },
+        "blog": {
+          "label": "Blog"
+        },
+        "post_limit": {
+          "label": "Number of testimonial to show"
+        },
+        "columns_desktop": {
+          "label": "Number of columns on desktop"
+        },
+        "show_view_all": {
+          "label": "Enable \"View all\" button if blog includes more testimonial than shown"
+        },
+        "show_image": {
+          "label": "Show featured image",
+          "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "show_date": {
+          "label": "Show date"
+        },
+        "show_author": {
+          "label": "Show author"
+        }
+      },
+      "presets": {
+        "name": "Testimonial"
+      }
+    },
     "featured-collection": {
       "name": "Featured collection",
       "settings": {

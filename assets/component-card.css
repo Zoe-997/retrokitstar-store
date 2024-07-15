@@ -667,3 +667,42 @@
 .product-card-wrapper .product-card-wrapper {
   margin-top: 0.8rem;
 }
+
+.testimonial-card-wrapper .card__inner .testimonial-card__image {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  background-color: #ebebeb;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-card-wrapper .card__media {
+  position: static;
+}
+
+.testimonial-card-wrapper .card__inner {
+  justify-content: center;
+}
+
+.testimonial-card-wrapper .card__content {
+  text-align: center;
+}
+
+.card__author {
+  font-size: 1.3rem;
+}
+
+.card__author::before {
+  content: "";
+  width: 1rem;
+  height: 0.1rem;
+  background-color: rgb(var(--color-foreground));
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+}
+
+.testimonial-card-wrapper {
+  color: rgb(var(--color-foreground));
+}
