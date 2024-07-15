@@ -30,6 +30,10 @@
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
 
+    .section-{{ section.id }}-padding .custom-media-inner {
+      max-width: {{ section.settings.max_width_custom_image }}px;
+    }
+
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
@@ -66,26 +70,37 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
   <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
-    <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
-      <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class="{% if section.settings.full_width %}container-w-full{% else %}page-width{% endif %} section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
+      <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %} items-{{ section.settings.vertical_alignment }}">
         <div class="grid__item product__media-wrapper">
-          {%- if section.settings.product != blank -%}
-            {% render 'product-media-gallery', product: product, variant_images: variant_images, limit: 1 %}
-          {%- else -%}
-            <div class="product__media-item">
+          {%- if section.settings.custom_image_product != blank -%}
+            <div class="custom-media-inner">
               <div
-                class="product-media-container global-media-settings gradient{% if section.settings.constrain_to_viewport %} constrain-height{% endif %}"
-                style="--ratio: 1.0; --preview-ratio: 1.0;"
+                class="relative media-custom media-{{ section.settings.media_fit }}"
+                style="padding-bottom: {{ 1|  divided_by: section.settings.custom_image_product.aspect_ratio | times: 100 }}%;"
               >
-                {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {{ section.settings.custom_image_product | image_url: width: 2048 | image_tag }}
               </div>
             </div>
+          {%- else -%}
+            {%- if section.settings.product != blank -%}
+              {% render 'product-media-gallery', product: product, variant_images: variant_images, limit: 1 %}
+            {%- else -%}
+              <div class="product__media-item">
+                <div
+                  class="product-media-container global-media-settings gradient{% if section.settings.constrain_to_viewport %} constrain-height{% endif %}"
+                  style="--ratio: 1.0; --preview-ratio: 1.0;"
+                >
+                  {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+              </div>
+            {%- endif -%}
           {%- endif -%}
         </div>
         <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <section
             id="ProductInfo-{{ section.id }}"
-            class="product__info-container"
+            class="product__info-container text-{{ section.settings.text_alignment }}"
             data-section="{{ section.id }}"
             data-url="{{ product.url }}"
           >
@@ -428,17 +443,20 @@
                   {% render 'icon-with-text', block: block %}
               {%- endcase -%}
             {%- endfor -%}
-            <a
-              {% if product == blank %}
-                role="link" aria-disabled="true"
-              {% else %}
-                href="{{ product.url }}"
-              {% endif %}
-              class="link product__view-details animate-arrow"
-            >
-              {{ 'products.product.view_full_details' | t }}
-              {% render 'icon-arrow' %}
-            </a>
+            {%- if section.settings.view_full_details != blank -%}
+              <a
+                {% if product == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ product.url }}"
+                {% endif %}
+                class="button button--secondary"
+              >
+                {{ section.settings.view_full_details }}
+                {% comment %} {{ 'products.product.view_full_details' | t }} {% endcomment %}
+                {% comment %} {% render 'icon-arrow' %} {% endcomment %}
+              </a>
+            {%- endif -%}
           </section>
         </div>
       </div>
@@ -1322,9 +1340,30 @@
   ],
   "settings": [
     {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
       "type": "product",
       "id": "product",
       "label": "t:sections.featured-product.settings.product.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image_product",
+      "label": "Custom Image Product"
+    },
+    {
+      "type": "range",
+      "id": "max_width_custom_image",
+      "min": 400,
+      "max": 800,
+      "step": 4,
+      "unit": "px",
+      "label": "Custom image product max width",
+      "default": 512
     },
     {
       "type": "color_scheme",
@@ -1435,6 +1474,37 @@
       "id": "enable_video_looping",
       "default": false,
       "label": "t:sections.featured-product.settings.enable_video_looping.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "view_full_details",
+      "label": "View full details button"
+    },
+    {
+      "type": "text_alignment",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "middle"
     },
     {
       "type": "header",

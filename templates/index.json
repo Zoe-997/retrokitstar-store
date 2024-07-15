@@ -171,57 +171,33 @@
     "featured_product_rYW3Ny": {
       "type": "featured-product",
       "blocks": {
-        "text_KLnV3A": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title_3WLg4t": {
           "type": "title",
           "settings": {
             "heading_size": "h1"
           }
-        },
-        "price_rqxAwz": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_pFn3mc": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "buy_buttons_ADaa4P": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
         }
       },
       "block_order": [
-        "text_KLnV3A",
-        "title_3WLg4t",
-        "price_rqxAwz",
-        "variant_picker_pFn3mc",
-        "buy_buttons_ADaa4P"
+        "title_3WLg4t"
       ],
       "settings": {
-        "product": "",
+        "full_width": true,
+        "product": "1981-boca-juniors-home-retro-kit",
+        "custom_image_product": "shopify:\/\/shop_images\/6-van-der-wiel-mufc-shirt-min.jpg",
+        "max_width_custom_image": 712,
         "color_scheme": "",
         "secondary_background": false,
-        "media_size": "medium",
+        "media_size": "small",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "none",
         "hide_variants": false,
         "enable_video_looping": false,
+        "view_full_details": "BUY NOW",
+        "text_alignment": "center",
+        "vertical_alignment": "middle",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -229,59 +205,46 @@
     "featured_product_qdMbM3": {
       "type": "featured-product",
       "blocks": {
-        "text_fDtXHr": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title_RhTQC8": {
           "type": "title",
           "settings": {
             "heading_size": "h1"
           }
-        },
-        "price_pzyP4k": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_zGgRpw": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "buy_buttons_43UBgk": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
         }
       },
       "block_order": [
-        "text_fDtXHr",
-        "title_RhTQC8",
-        "price_pzyP4k",
-        "variant_picker_zGgRpw",
-        "buy_buttons_43UBgk"
+        "title_RhTQC8"
       ],
       "settings": {
-        "product": "",
+        "full_width": true,
+        "product": "2003-2005-chelsea-away-retro-kit",
+        "custom_image_product": "shopify:\/\/shop_images\/snooop.jpg",
+        "max_width_custom_image": 512,
         "color_scheme": "",
         "secondary_background": false,
-        "media_size": "medium",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "media_position": "left",
+        "media_position": "right",
         "image_zoom": "lightbox",
         "hide_variants": false,
         "enable_video_looping": false,
+        "view_full_details": "SEE MORE",
+        "text_alignment": "center",
+        "vertical_alignment": "middle",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "line_fYVhRi": {
+      "type": "line",
+      "settings": {
+        "full_width": true,
+        "color_line": "#ebebeb",
+        "height": 1,
+        "style": "solid",
+        "padding_top": 30,
+        "padding_bottom": 30
       }
     },
     "rich_text_xFpQMX": {
@@ -291,7 +254,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>#RETROKITSTAR ON INSTAGRAM<\/strong>",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "heading_spacing": 2
           }
         },
@@ -315,57 +278,37 @@
         "padding_bottom": 52
       }
     },
-    "multicolumn_3gTL3P": {
-      "type": "multicolumn",
+    "image_banner_tBBWDG": {
+      "type": "image-banner",
       "blocks": {
-        "column_VfTikj": {
-          "type": "column",
+        "heading_EqBarM": {
+          "type": "heading",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_pajYyy": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<h4>🎉 OVER 10000 HAPPY CUSTOMERS ALL ACROSS THE WORLD<\/h4>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_MJQGk9": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "heading": "🎉 OVER 10000 HAPPY CUSTOMERS ALL ACROSS THE WORLD",
+            "heading_size": "h2",
+            "show_line": false,
+            "color_line": "#000000",
+            "height_line": 1,
+            "style_line": "solid",
+            "padding_bottom": 14
           }
         }
       },
       "block_order": [
-        "column_VfTikj",
-        "column_pajYyy",
-        "column_MJQGk9"
+        "heading_EqBarM"
       ],
       "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify:\/\/shop_images\/7DCCB23E-816B-4493-B4A3-9CB61F920F72_1950x_6f7c49d3-fc85-47e8-96a0-a2af3ee8c7fd.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "featured_blog_NNUnEG": {
@@ -394,8 +337,9 @@
     "featured_collection",
     "featured_product_rYW3Ny",
     "featured_product_qdMbM3",
+    "line_fYVhRi",
     "rich_text_xFpQMX",
-    "multicolumn_3gTL3P",
+    "image_banner_tBBWDG",
     "featured_blog_NNUnEG"
   ]
 }
