@@ -659,3 +659,11 @@
 .collection-card-wrapper .card--standard:hover .card__heading a:after {
   opacity: 1;
 }
+
+.product-card-wrapper .card__heading {
+  font-size: 1.9rem;
+}
+
+.product-card-wrapper .product-card-wrapper {
+  margin-top: 0.8rem;
+}

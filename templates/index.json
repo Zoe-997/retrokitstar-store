@@ -132,7 +132,7 @@
         "show_view_all": false,
         "collection_item_transform": "uppercase",
         "collection_item_weight": "700",
-        "collection_item_color": "",
+        "collection_item_color": "scheme-3",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
