@@ -53,15 +53,10 @@
       </div>
     {%- endunless -%}
 
-    <slideshow-component
-      class="slider-mobile-gutter"
-      role="region"
-      aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
-      aria-label="{{ section.settings.accessibility_info | escape }}"
-    >
+    <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
-        class="testimonials-wrapper contains-card contains-card--testimonial{% if settings.blog_card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %} slider--everywhere"
+        class="testimonial-wrapper contains-card contains-card--testimonial grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider slider--everywhere {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
         role="list"
       >
         {%- if section.blocks.size > 0 -%}
@@ -131,52 +126,32 @@
       </ul>
 
       {%- if posts_exceed_limit -%}
-        <div class="slideshow__controls slider-buttons slideshow__controls--border-radius-mobile">
+        <div class="slider-buttons{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
           <button
             type="button"
             class="slider-button slider-button--prev"
             name="previous"
-            aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
-            aria-controls="Slider-{{ section.id }}"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
           >
             {% render 'icon-caret' %}
           </button>
-          <div class="slider-counter slider-counter__link--dots link">
-            <div class="slideshow__control-wrapper">
-              {%- for block in section.blocks -%}
-                <button
-                  class="slider-counter__link slider-counter__link--dots link"
-                  aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-                  aria-controls="Slider-{{ section.id }}"
-                >
-                  <span class="dot"></span>
-                </button>
-              {%- endfor -%}
-            </div>
+          <div class="slider-counter caption">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+            <span class="slider-counter--total">{{ section.settings.post_limit }}</span>
           </div>
           <button
             type="button"
             class="slider-button slider-button--next"
             name="next"
-            aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
-            aria-controls="Slider-{{ section.id }}"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
           >
             {% render 'icon-caret' %}
           </button>
-
-          {%- if section.settings.auto_rotate -%}
-            <button
-              type="button"
-              class="slideshow__autoplay slider-button{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}"
-              aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}"
-            >
-              {%- render 'icon-pause' -%}
-              {%- render 'icon-play' -%}
-            </button>
-          {%- endif -%}
         </div>
       {%- endif -%}
-    </slideshow-component>
+    </slider-component>
   </div>
 </div>
 

@@ -298,7 +298,7 @@
         "heading_EqBarM"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/7DCCB23E-816B-4493-B4A3-9CB61F920F72_1950x_6f7c49d3-fc85-47e8-96a0-a2af3ee8c7fd.jpg",
+        "image": "shopify:\/\/shop_images\/7DCCB23E-816B-4493-B4A3-9_5-47e8-96a0-a2af3ee8c7fd.jpg",
         "image_overlay_opacity": 50,
         "image_height": "small",
         "desktop_content_position": "middle-center",
@@ -309,6 +309,62 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "testimonial_36nMnB": {
+      "type": "testimonial",
+      "blocks": {
+        "item_FtEA3e": {
+          "type": "item",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/145525032_10222785615416305_2141634428482173800_o_medium_1.jpg",
+            "content": "<p>This jersey is perfect, you must order it high quality, my cousin loved it to the point where I will need to buy one for him. . This is a must buy and I will buy another one of this jersey<\/p>",
+            "author": "Antonio Gleason"
+          }
+        },
+        "item_6VzLTD": {
+          "type": "item",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/18319137_1465263800193032_1914455837345813125_o_medium_162e2d8c-8c3d-45c4-87c7-47992ff3d32f.jpg",
+            "content": "<p>This jersey is perfect, you must order it high quality, my cousin loved it to the point where I will need to buy one for him. . This is a must buy and I will buy another one of this jersey<\/p>",
+            "author": "Vitoko andre"
+          }
+        },
+        "item_pz8p9n": {
+          "type": "item",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/18402616_1403924179647065_6305217389448745163_n_medium_1.jpg",
+            "content": "<p>This jersey is perfect, you must order it high quality, my cousin loved it to the point where I will need to buy one for him. . This is a must buy and I will buy another one of this jersey<\/p>",
+            "author": "Peter bolton"
+          }
+        },
+        "item_Q7q7bz": {
+          "type": "item",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/review_4_medium_1.jpg",
+            "content": "<p>This jersey is perfect, you must order it high quality, my cousin loved it to the point where I will need to buy one for him. . This is a must buy and I will buy another one of this jersey<\/p>",
+            "author": "Samantha king"
+          }
+        }
+      },
+      "block_order": [
+        "item_FtEA3e",
+        "item_6VzLTD",
+        "item_pz8p9n",
+        "item_Q7q7bz"
+      ],
+      "settings": {
+        "heading": "<strong>REVIEW<\/strong>",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "post_limit": 4,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_author": true,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_blog_NNUnEG": {
@@ -341,6 +397,7 @@
     "line_fYVhRi",
     "rich_text_xFpQMX",
     "image_banner_tBBWDG",
+    "testimonial_36nMnB",
     "featured_blog_NNUnEG"
   ]
 }
