@@ -23,6 +23,11 @@
   padding-right: 5rem;
 }
 
+.newsletter-form__field-wrapper .field__label {
+  font-size: 1.1rem;
+  top: calc(1.5rem + var(--inputs-border-width));
+}
+
 .newsletter-form__field-wrapper .field {
   z-index: 0;
 }
@@ -43,12 +48,15 @@
 }
 
 .newsletter-form__button {
-  width: 4.4rem;
+  width: auto;
   margin: 0;
   right: var(--inputs-border-width);
-  top: 0;
-  height: 100%;
+  top: var(--inputs-border-width);
+  bottom: var(--inputs-border-width);
   z-index: 2;
+  padding: 0.7rem 1.8rem;
+  background-color: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
 }
 
 .newsletter-form__button:focus-visible {
@@ -63,7 +71,7 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
+  /* background-color: inherit; */
 }
 
 .newsletter-form__button .icon {

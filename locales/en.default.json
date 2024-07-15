@@ -61,9 +61,9 @@
     }
   },
   "newsletter": {
-    "label": "Email",
+    "label": "EMAIL HERE",
     "success": "Thanks for subscribing",
-    "button_label": "Subscribe"
+    "button_label": "SIGN UP"
   },
   "accessibility": {
     "skip_to_text": "Skip to content",
