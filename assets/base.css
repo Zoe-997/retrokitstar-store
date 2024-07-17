@@ -495,7 +495,7 @@ blockquote {
 .field__input,
 .form__label,
 .select__select {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   letter-spacing: 0.04rem;
 }
@@ -1707,8 +1707,8 @@ details[open] > .share-button__fallback {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
-  font-size: 1.2rem;
-  color: rgba(var(--color-foreground), 0.75);
+  /* font-size: 1.2rem; */
+  color: rgba(var(--color-foreground), 1);
 }
 
 .field:hover.field:after,
@@ -3708,4 +3708,20 @@ details-disclosure > details {
   transform: rotate(-90deg);
   display: inline-block;
   vertical-align: middle;
+}
+
+body .trustshop-review-summary--average {
+  display: none;
+}
+
+body .trustshop-review-summary--total:before {
+  content: "(";
+}
+
+body .trustshop-review-summary--total:after {
+  content: ")";
+}
+
+body .trustshop-summary--rating > a {
+  color: #FFDF00;
 }

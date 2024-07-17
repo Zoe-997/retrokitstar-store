@@ -93,8 +93,8 @@
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
     "badge_position": "bottom left",
-    "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "scheme-5",
+    "badge_corner_radius": 0,
+    "sale_badge_color_scheme": "scheme-150bb4a8-ddb6-4837-b0b3-52335bec00a4",
     "sold_out_badge_color_scheme": "scheme-3",
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -130,6 +130,14 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "4935202709820522637": {
+        "type": "shopify:\/\/apps\/trustshop-product-reviews\/blocks\/review-embed\/18b0c4cc-5411-4b6e-922d-34fdc2f30ab9",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -168,7 +176,7 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#3d4246",
+          "text": "#000000",
           "button": "#08aa00",
           "button_label": "#ffffff",
           "secondary_button_label": "#ffffff",
@@ -195,6 +203,17 @@
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
+        }
+      },
+      "scheme-150bb4a8-ddb6-4837-b0b3-52335bec00a4": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "rgba(0,0,0,0)",
+          "button_label": "rgba(0,0,0,0)",
+          "secondary_button_label": "rgba(0,0,0,0)",
+          "shadow": "rgba(0,0,0,0)"
         }
       }
     }
