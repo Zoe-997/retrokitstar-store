@@ -374,6 +374,17 @@
   .banner--desktop-transparent .content-container:after {
     display: none;
   }
+
+  .banner__box {
+    min-height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner__box .subtitle {
+    color: rgba(var(--color-foreground), 1);
+  }
 }
 
 @media screen and (max-width: 749px) {
