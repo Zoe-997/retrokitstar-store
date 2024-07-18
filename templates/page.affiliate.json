@@ -2,24 +2,214 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "form": {
-      "type": "contact-form",
+    "multirow_kni9gg": {
+      "type": "multirow",
+      "blocks": {
+        "row_brWx8L": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1718986200_OObmu.jpg",
+            "caption": "",
+            "heading": "<strong>REFER & GET COMMISSIONS<\/strong>",
+            "text": "<p>join our referral program and score 10% commission on every successful referral.<\/p><p>Share your love for football shirts and get rewarded!<\/p>",
+            "button_label": "SIGN UP NOW",
+            "button_link": "\/account\/login"
+          }
+        }
+      },
+      "block_order": [
+        "row_brWx8L"
+      ],
       "settings": {
-        "heading": "",
+        "image_height": "medium",
+        "desktop_image_width": "medium",
         "heading_size": "h1",
-        "color_scheme": "scheme-1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-a3f21165-eb0e-4b6f-b909-a4c69474fe31",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "multicolumn_Jzmgtn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Jfgfhf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-1_7cec1d98-dc2e-4e63-8f1b-48a33f56fcf0.png",
+            "title": "<strong>Sign up<\/strong>",
+            "text": "<p>Takes you only one minute to fill out the form. Then have your application reviewed within our next working days.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_E8b46N": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-2_5c129d8d-d1ab-400c-b8bc-cc914c3bdd1b.png",
+            "title": "<strong>Promote<\/strong>",
+            "text": "<p>Share your affiliate link\/coupon on your social media, Tiktok, Instagram, Youtube, etc..<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_czHfGp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-3_05539c41-6502-4cbe-badc-aad81c665de1.png",
+            "title": "<strong>Earn<\/strong>",
+            "text": "<p>Get commissions on every successful referral<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Jfgfhf",
+        "column_E8b46N",
+        "column_czHfGp"
+      ],
+      "settings": {
+        "title": "Working with us is simple",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "contain",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_KBBkW4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_U4YjUj": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>NO joining fee - start right away<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pnQR6z": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>High-Earning Commission System (Post More - Earn More)<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8XAPDT": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>Receive Free Jerseys for Your Promotions<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KQa8ee": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>Access to our promotion assets and dedicated support<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_U4YjUj",
+        "column_pnQR6z",
+        "column_8XAPDT",
+        "column_KQa8ee"
+      ],
+      "settings": {
+        "title": "The Benefits of Being a Retrokitstar Affiliate",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_Gjap4P": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7yxXfp": {
+          "type": "heading",
+          "settings": {
+            "heading": "JOIN OUR TEAM",
+            "heading_size": "h1",
+            "heading_spacing": 2
+          }
+        },
+        "text_NUGmbi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Become our affiliate and start earning from today<\/p>"
+          }
+        },
+        "button_6QQBA6": {
+          "type": "button",
+          "settings": {
+            "button_label": "SIGN UP NOW",
+            "button_link": "\/account\/register",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7yxXfp",
+        "text_NUGmbi",
+        "button_6QQBA6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "multirow_kni9gg",
+    "multicolumn_Jzmgtn",
+    "multicolumn_KBBkW4",
+    "rich_text_Gjap4P"
   ]
 }

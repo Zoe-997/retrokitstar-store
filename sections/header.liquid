@@ -256,7 +256,7 @@
       </div>
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
-      {%- if shop.customer_accounts_enabled -%}
+      {%- if shop.customer_accounts_enabled and section.settings.enable_customer -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           {%- if section.settings.enable_customer_avatar -%}
             <account-icon>
@@ -623,6 +623,12 @@
       "type": "header",
       "content": "t:sections.header.settings.header__7.content",
       "info": "t:sections.header.settings.header__7.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_customer",
+      "default": true,
+      "label": "t:sections.header.settings.enable_customer.label"
     },
     {
       "type": "checkbox",

@@ -1217,6 +1217,9 @@
         "enable_customer_avatar": {
           "label": "Show avatar",
           "info": "Customers will only see their avatar when they're signed in with Shop"
+        },
+        "enable_customer": {
+          "label": "Show customer"
         }
       }
     },
@@ -2586,6 +2589,9 @@
           },
           "options__4": {
             "label": "Circle"
+          },
+          "options__5": {
+            "label": "Contain"
           }
         },
         "columns_desktop": {
