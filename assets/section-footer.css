@@ -180,7 +180,12 @@
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
-    font-size: calc(var(--font-heading-scale) * 1.8rem);
+    font-size: calc(var(--font-heading-scale) * 1.5rem);
+  }
+
+  .footer-block__heading.block-text {
+    font-size: calc(var(--font-heading-scale) * 2rem);
+    letter-spacing: .1em;
   }
 }
 
