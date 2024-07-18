@@ -1,14 +1,27 @@
-.page-title {
-  margin-top: 0;
+.inner-main-page {
+  text-align: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.main-page-title {
-  margin-bottom: 3rem;
+.page-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+}
+
+.main-page-title+div {
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 750px) {
-  .main-page-title {
-    margin-bottom: 4rem;
+  .main-page-title+div {
+    margin-top: 4rem;
   }
 }
 

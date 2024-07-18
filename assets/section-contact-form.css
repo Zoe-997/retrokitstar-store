@@ -24,16 +24,54 @@
   margin-top: 3rem;
 }
 
+.contact__button .button {
+  width: 100%;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;
   }
 }
 
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
   .contact__fields {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
   }
+} */
+
+.contact .field {
+  flex-wrap: wrap;
+}
+
+.contact .field > *{
+  width: 100%;
+  order: 2
+}
+
+.contact .field:before,
+.contact .field:after {
+  display: none;
+}
+
+.contact .field__label {
+  position: static;
+  display: block;
+  order: 1;
+  margin-bottom: 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ebebeb;
+}
+
+.contact > .title {
+  font-size: 1.9rem;
+  padding: 2rem 0 1rem;
 }

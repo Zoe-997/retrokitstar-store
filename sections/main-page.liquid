@@ -1,9 +1,18 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  #main-page-{{ section.id }} {
+    background-color: {{ section.settings.main_page_background }};
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .section-{{ section.id }}-padding,
+  .section-{{ section.id }}-padding h1 {
+    color: {{ section.settings.main_page_color }};
   }
 
   @media screen and (min-width: 750px) {
@@ -14,12 +23,20 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {{ page.title | escape }}
-  </h1>
-  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
+<div
+  id="main-page-{{ section.id }}"
+  class="inner-main-page"
+  style="{%- if section.settings.main_page_image != blank -%}background-image: url({{ section.settings.main_page_image | image_url: width: 2080 | image_tag }}{%- endif -%}"
+>
+  <div class="page-width page-width--narrow section-{{ section.id }}-padding">
+    <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ page.title | escape }}
+    </h1>
+    {%- if page.content != blank -%}
+      <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ page.content }}
+      </div>
+    {%- endif -%}
   </div>
 </div>
 
@@ -29,6 +46,23 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_page_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "main_page_color",
+      "label": "Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "main_page_background",
+      "label": "Background",
+      "default": "#ebebeb"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
