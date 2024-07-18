@@ -3,8 +3,10 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "main_page_color": "#000000",
+        "main_page_background": "#ffffff",
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 12
       }
     }
   },

@@ -23,24 +23,16 @@
   }
 {%- endstyle -%}
 
-<div class="main-page-has-content">
-  <div
-    id="main-page-{{ section.id }}"
-    class="inner-main-page"
-    style="{%- if section.settings.main_page_image != blank -%}background-image: url({{ section.settings.main_page_image | image_url: width: 2080 | image_tag }}{%- endif -%}"
-  >
-    <div class="page-width page-width--narrow section-{{ section.id }}-padding">
-      <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-        {{ page.title | escape }}
-      </h1>
-    </div>
+<div
+  id="main-page-{{ section.id }}"
+  class="inner-main-page"
+  style="{%- if section.settings.main_page_image != blank -%}background-image: url({{ section.settings.main_page_image | image_url: width: 2080 | image_tag }}{%- endif -%}"
+>
+  <div class="page-width page-width--narrow section-{{ section.id }}-padding">
+    <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ page.title | escape }}
+    </h1>
   </div>
-
-  {%- if page.content != blank -%}
-    <div class="page-width rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-      {{ page.content }}
-    </div>
-  {%- endif -%}
 </div>
 
 {% schema %}

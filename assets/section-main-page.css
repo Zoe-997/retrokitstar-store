@@ -34,3 +34,18 @@
   width: 52.5rem;
   height: 52.5rem;
 }
+
+.main-page-has-content .inner-main-page {
+  min-height: auto;
+}
+
+.main-page-has-content .page-title {
+  font-weight: 400;
+  text-transform: unset;
+}
+
+@media screen and (min-width: 750px) {
+  .main-page-has-content .page-title {
+    font-size: 3.5rem;
+  }
+}
