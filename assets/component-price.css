@@ -7,7 +7,7 @@
 
 .price > * {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .price.price--unavailable {
@@ -68,6 +68,7 @@
 .price--on-sale .price__badge-sale,
 .volume-pricing--sale-badge .price__badge-sale {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .volume-pricing--sale-badge .price__badge-sale {

@@ -8,3 +8,28 @@
   letter-spacing: .1em;
   line-height: 2.7rem;
 }
+
+.return-link-wrapper {
+  margin: 2.75rem auto;
+}
+
+.return-link-wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(var(--color-button-text));
+  background-color: rgb(var(--color-button));
+  padding: 0.7rem 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
+}
+
+.return-link-wrapper svg {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+.return-link-wrapper a:hover{
+  opacity: .9;
+}

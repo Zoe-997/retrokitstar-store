@@ -2,7 +2,7 @@
   --alpha-button-background: 1;
   --alpha-button-border: 1;
   --alpha-link: 0.85;
-  --alpha-badge-border: 0.1;
+  --alpha-badge-border: 1;
   --focused-base-outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   --focused-base-outline-offset: 0.3rem;
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
@@ -1866,6 +1866,10 @@ details[open] > .share-button__fallback {
   width: 4.4rem;
 }
 
+.field__button:hover {
+  opacity: .9;
+}
+
 .field__button > svg {
   height: 2.5rem;
   width: 2.5rem;
@@ -3023,13 +3027,15 @@ details-disclosure > details {
   display: inline-block;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
-  line-height: 1;
-  padding: 0.5rem 1.3rem 0.6rem 1.3rem;
+  line-height: 2.7rem;
+  padding: 0 0.8rem;
   text-align: center;
   background-color: rgb(var(--color-badge-background));
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .gradient {
@@ -3720,8 +3726,4 @@ body .trustshop-review-summary--total:before {
 
 body .trustshop-review-summary--total:after {
   content: ")";
-}
-
-body .trustshop-summary--rating > a {
-  color: #FFDF00;
 }
