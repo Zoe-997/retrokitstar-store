@@ -53,9 +53,7 @@
           <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
             <div
               class="image-with-text__media image-with-text__media--{{ section.settings.image_height }} gradient color-{{ section.settings.row_color_scheme }} global-media-settings{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}"
-              {% if section.settings.image_height == 'adapt' and block.settings.image != blank %}
-                style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
-              {% endif %}
+              style="border-radius: {{ block.settings.image_radius }}px; {% if section.settings.image_height == 'adapt' and block.settings.image != blank %}padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;{% endif %}"
             >
               {%- if block.settings.image != blank -%}
                 {%- capture sizes -%}
@@ -87,18 +85,32 @@
               {%- if block.settings.text -%}
                 <div class="image-with-text__text rte {{ section.settings.text_style }}">{{ block.settings.text }}</div>
               {%- endif -%}
-              {%- if block.settings.button_label != blank -%}
-                <a
-                  {% if block.settings.button_link == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link }}"
-                  {% endif %}
-                  class="button button--{{ section.settings.button_style }}"
-                >
-                  {{ block.settings.button_label | escape }}
-                </a>
-              {%- endif -%}
+              <div class="multirow-button flex flex-wrap">
+                {%- if block.settings.button_label != blank -%}
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}"
+                    {% endif %}
+                    class="button button--primary"
+                  >
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                {%- endif -%}
+                {%- if block.settings.button_label_2 != blank -%}
+                  <a
+                    {% if block.settings.button_link_2 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_2 }}"
+                    {% endif %}
+                    class="button button--secondary"
+                  >
+                    {{ block.settings.button_label_2 | escape }}
+                  </a>
+                {%- endif -%}
+              </div>
             </div>
           </div>
         </div>
@@ -203,22 +215,6 @@
       ],
       "default": "body",
       "label": "t:sections.multirow.settings.text_style.label"
-    },
-    {
-      "type": "select",
-      "id": "button_style",
-      "options": [
-        {
-          "value": "primary",
-          "label": "t:sections.multirow.settings.button_style.options__1.label"
-        },
-        {
-          "value": "secondary",
-          "label": "t:sections.multirow.settings.button_style.options__2.label"
-        }
-      ],
-      "default": "secondary",
-      "label": "t:sections.multirow.settings.button_style.label"
     },
     {
       "type": "select",
@@ -358,6 +354,16 @@
           "label": "t:sections.multirow.blocks.row.settings.image.label"
         },
         {
+          "type": "range",
+          "id": "image_radius",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Image radius",
+          "default": 8
+        },
+        {
           "type": "text",
           "id": "caption",
           "default": "t:sections.multirow.blocks.row.settings.caption.default",
@@ -385,6 +391,17 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.multirow.blocks.row.settings.button_link.label"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "t:sections.multirow.blocks.row.settings.button_label.default_2",
+          "label": "t:sections.multirow.blocks.row.settings.button_label.label_2"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "t:sections.multirow.blocks.row.settings.button_link.label_2"
         }
       ]
     }

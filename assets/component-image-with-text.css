@@ -415,3 +415,7 @@
     row-gap: var(--grid-desktop-vertical-spacing);
   }
 }
+
+.multirow-button {
+  gap: 1rem;
+}

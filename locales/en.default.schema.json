@@ -1683,10 +1683,13 @@
             },
             "button_label": {
               "label": "Button label",
-              "default": "Button label"
+              "default": "Button label",
+              "label_2": "Button label",
+              "default_2": "Button label"
             },
             "button_link": {
-              "label": "Button link"
+              "label": "Button link",
+              "label_2": "Button link 2"
             }
           }
         }

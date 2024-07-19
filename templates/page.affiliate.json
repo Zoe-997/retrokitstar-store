@@ -4,6 +4,8 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "main_page_color": "#000000",
+        "main_page_background": "#ebebeb",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -15,11 +17,14 @@
           "type": "row",
           "settings": {
             "image": "shopify:\/\/shop_images\/1718986200_OObmu.jpg",
+            "image_radius": 8,
             "caption": "",
             "heading": "<strong>REFER & GET COMMISSIONS<\/strong>",
             "text": "<p>join our referral program and score 10% commission on every successful referral.<\/p><p>Share your love for football shirts and get rewarded!<\/p>",
-            "button_label": "SIGN UP NOW",
-            "button_link": "\/account\/login"
+            "button_label": "SIGN UP NOW!",
+            "button_link": "\/account\/register",
+            "button_label_2": "Login",
+            "button_link_2": "\/account\/login"
           }
         }
       },
@@ -27,11 +32,10 @@
         "row_brWx8L"
       ],
       "settings": {
-        "image_height": "medium",
+        "image_height": "large",
         "desktop_image_width": "medium",
         "heading_size": "h1",
         "text_style": "body",
-        "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-right",

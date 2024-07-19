@@ -1,0 +1,16 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "header2": {
+      "type": "header2",
+      "settings": {
+        "full_width": false,
+        "logo": "shopify:\/\/shop_images\/logo-2.png"
+      }
+    }
+  },
+  "order": [
+    "header2"
+  ]
+}
