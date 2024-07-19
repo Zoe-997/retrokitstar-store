@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "main": {
@@ -26,11 +17,15 @@
           "type": "row",
           "settings": {
             "image": "shopify:\/\/shop_images\/1718986200_OObmu.jpg",
+            "image_radius": 8,
+            "show_content_border": false,
             "caption": "",
             "heading": "<strong>REFER & GET COMMISSIONS<\/strong>",
             "text": "<p>join our referral program and score 10% commission on every successful referral.<\/p><p>Share your love for football shirts and get rewarded!<\/p>",
             "button_label": "SIGN UP NOW!",
-            "button_link": "\/account\/register"
+            "button_link": "\/account\/register",
+            "button_label_2": "LOGIN",
+            "button_link_2": "\/account\/login"
           }
         }
       },
@@ -40,7 +35,7 @@
       "settings": {
         "image_height": "large",
         "desktop_image_width": "medium",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "text_style": "body",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
@@ -48,8 +43,8 @@
         "section_color_scheme": "scheme-2",
         "row_color_scheme": "scheme-a3f21165-eb0e-4b6f-b909-a4c69474fe31",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "multicolumn_Jzmgtn": {
@@ -92,20 +87,22 @@
         "column_czHfGp"
       ],
       "settings": {
-        "title": "Working with us is simple",
+        "title": "<strong>Working with us is simple<\/strong>",
+        "subtitle": "Make money in 3 easy steps.",
         "heading_size": "h1",
+        "heading_alignment": "center",
         "image_width": "full",
         "image_ratio": "contain",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-149e0ab9-f960-4f3e-88c7-fdec0989b96c",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "multicolumn_KBBkW4": {
@@ -155,8 +152,10 @@
         "column_KQa8ee"
       ],
       "settings": {
-        "title": "The Benefits of Being a Retrokitstar Affiliate",
+        "title": "<strong>The Benefits of Being a Retrokitstar Affiliate<\/strong>",
+        "subtitle": "",
         "heading_size": "h1",
+        "heading_alignment": "center",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
@@ -164,11 +163,11 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-f1c93ee7-47ad-42a4-a1ca-7159958cdf49",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "rich_text_Gjap4P": {
@@ -177,7 +176,7 @@
         "heading_7yxXfp": {
           "type": "heading",
           "settings": {
-            "heading": "JOIN OUR TEAM",
+            "heading": "<strong>JOIN OUR TEAM<\/strong>",
             "heading_size": "h1",
             "heading_spacing": 2
           }
@@ -208,10 +207,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-a3f21165-eb0e-4b6f-b909-a4c69474fe31",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 60,
+        "padding_bottom": 72
       }
     }
   },

@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/logo-demo.png",
@@ -74,9 +65,9 @@
     "blog_card_shadow_horizontal_offset": 0,
     "blog_card_shadow_vertical_offset": 4,
     "blog_card_shadow_blur": 5,
-    "text_boxes_border_thickness": 0,
+    "text_boxes_border_thickness": 1,
     "text_boxes_border_opacity": 10,
-    "text_boxes_radius": 0,
+    "text_boxes_radius": 12,
     "text_boxes_shadow_opacity": 0,
     "text_boxes_shadow_horizontal_offset": 0,
     "text_boxes_shadow_vertical_offset": 4,
@@ -227,13 +218,46 @@
       },
       "scheme-a3f21165-eb0e-4b6f-b909-a4c69474fe31": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#f3f3f3",
           "background_gradient": "",
           "text": "#000000",
           "button": "#282c40",
           "button_label": "#ffffff",
-          "secondary_button_label": "#000000",
-          "shadow": "rgba(0,0,0,0)"
+          "secondary_button_label": "#282c40",
+          "shadow": "#282c40"
+        }
+      },
+      "scheme-f1c93ee7-47ad-42a4-a1ca-7159958cdf49": {
+        "settings": {
+          "background": "#f7f7f7",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#ffffff",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#ffffff"
+        }
+      },
+      "scheme-149e0ab9-f960-4f3e-88c7-fdec0989b96c": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#d6d6d6",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-320ffd3c-e61f-4ed3-9af6-319841c59e63": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#282c40",
+          "button": "#282c40",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#282c40",
+          "shadow": "#282c40"
         }
       }
     }

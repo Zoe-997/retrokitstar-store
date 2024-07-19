@@ -1,5 +1,5 @@
 {{ 'header-2.css' | asset_url | stylesheet_tag }}
-<header class="header-2">
+<header class="header-2 color-{{ section.settings.color_scheme }}">
   <div class="{% unless section.settings.full_width %}page-width{% endunless %}">
     <div class="flex flex-wrap items-center justify-between">
       <div class="header-logo">
@@ -82,6 +82,12 @@
       "unit": "px",
       "label": "Logo width",
       "default": 133
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color Scheme"
     }
   ],
   "presets": [
