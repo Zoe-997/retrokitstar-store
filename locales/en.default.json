@@ -390,9 +390,6 @@
       "min_error": "This item has a minimum of {{ min }}",
       "max_error": "This item has a maximum of {{ max }}",
       "step_error": "You can only add this item in increments of {{ step }}"
-    },
-    "related_product": {
-      "back_to_best_selling": "Back to best selling"
     }
   },
   "localization": {
@@ -447,14 +444,14 @@
     "log_out": "Log out",
     "login_page": {
       "cancel": "Cancel",
-      "create_account": "Create account",
+      "create_account": "Sign up",
       "email": "Email",
       "forgot_password": "Forgot your password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
       "title": "Login",
-      "sign_in": "Sign in",
+      "sign_in": "Login",
       "submit": "Submit",
       "alternate_provider_separator": "or"
     },
