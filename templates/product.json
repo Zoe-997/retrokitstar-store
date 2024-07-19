@@ -51,8 +51,7 @@
           "settings": {
             "extra_heading": "<strong>PRODUCT DETAILS<\/strong>",
             "extra_content": "<p>Estimated delivery time 14-30 days<\/p>",
-            "extra_icon": "plane",
-            "show_description": true
+            "extra_icon": "plane"
           }
         },
         "extra_info_EkXi9M": {
@@ -61,8 +60,7 @@
             "extra_heading": "<strong>GUARANTEED SAFE CHECKOUT<\/strong>",
             "extra_image": "shopify:\/\/shop_images\/pay_right_500x100_4079d749-fbe0-4bb8-8944-ff8d42469f91.png",
             "extra_content": "",
-            "extra_icon": "none",
-            "show_description": false
+            "extra_icon": "none"
           }
         }
       },
@@ -124,8 +122,6 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "show_view_more": true,
-        "best_selling_collection": "tracksuit",
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28

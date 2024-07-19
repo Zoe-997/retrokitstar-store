@@ -306,13 +306,6 @@ a.product__text {
 
 .product .price .badge {
   margin-bottom: 0.5rem;
-  background-color: transparent;
-  color: #000000;
-  border-color: #000000;
-  border-width: 0.2rem;
-  line-height: 2.8rem;
-  font-size: 1.9rem;
-  padding: 0.2rem 0.6rem;
 }
 
 .product .price__container {
@@ -334,7 +327,7 @@ a.product__text {
   }
 
   .product__info-container .price--on-sale .price-item--regular {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 
   .product__info-container > *:first-child {
@@ -1542,10 +1535,6 @@ a.product__text {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.extra-information .content p {
-  margin-top: 0
 }
 
 .extra-information .content span {

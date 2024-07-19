@@ -17,14 +17,11 @@
           "type": "row",
           "settings": {
             "image": "shopify:\/\/shop_images\/1718986200_OObmu.jpg",
-            "image_radius": 8,
             "caption": "",
             "heading": "<strong>REFER & GET COMMISSIONS<\/strong>",
             "text": "<p>join our referral program and score 10% commission on every successful referral.<\/p><p>Share your love for football shirts and get rewarded!<\/p>",
             "button_label": "SIGN UP NOW!",
-            "button_link": "\/account\/register",
-            "button_label_2": "Login",
-            "button_link_2": "\/account\/login"
+            "button_link": "\/account\/register"
           }
         }
       },

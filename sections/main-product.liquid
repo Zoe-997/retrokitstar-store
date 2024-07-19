@@ -662,12 +662,6 @@
                     <h3>{{ block.settings.extra_heading }}</h3>
                   {%- endif -%}
 
-                  {%- if block.settings.show_description and product.description != blank -%}
-                    <div class="content" {{ block.shopify_attributes }}>
-                      {{ product.description | truncate: 255 }}
-                    </div>
-                  {%- endif -%}
-
                   {%- if block.settings.extra_content != blank -%}
                     <div class="content">
                       <span class="{{ block.settings.extra_icon }}">
@@ -2301,12 +2295,6 @@
           ],
           "default": "heart",
           "label": "Icon before content"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_description",
-          "label": "Show product description",
-          "default": false
         }
       ]
     }

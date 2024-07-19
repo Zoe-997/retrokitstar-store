@@ -56,14 +56,6 @@
   {% if section.settings.image_shape == 'arch' %}
     {% render 'mask-arch' %}
   {%- endif -%}
-  {%- if section.settings.show_view_more -%}
-    <div class="text-center return-link-wrapper">
-      <a href="{{ section.settings.best_selling_collection.url }}">
-        <span>{%- render 'icon-arrow' -%}</span>
-        <span>{{ 'sections.related_product.back_to_best_selling' | t }}</span>
-      </a>
-    </div>
-  {%- endif -%}
 </div>
 
 {% schema %}
@@ -218,17 +210,6 @@
       "default": false,
       "label": "t:sections.related-products.settings.show_rating.label",
       "info": "t:sections.related-products.settings.show_rating.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_more",
-      "default": false,
-      "label": "Show back to best selling button"
-    },
-    {
-      "type": "collection",
-      "id": "best_selling_collection",
-      "label": "Best selling collection"
     },
     {
       "type": "header",
