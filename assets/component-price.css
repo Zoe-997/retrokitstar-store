@@ -104,3 +104,9 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
+
+@media screen and (max-width: 749px) {
+  .testimonial-card-wrapper .card__content {
+    padding: 0;
+  }
+}

@@ -8,6 +8,13 @@
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
+body *:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
@@ -3096,6 +3103,8 @@ details-disclosure > details {
 
 .content-container.no-border {
   border-width: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .content-container.rick-text-2 {
@@ -3754,4 +3763,8 @@ body .trustshop-review-summary--total:before {
 
 body .trustshop-review-summary--total:after {
   content: ")";
+}
+
+body.page .rte {
+  word-wrap: break-word;
 }

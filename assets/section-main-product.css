@@ -191,7 +191,7 @@ product-info {
   border: none;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 640px) {
   .product-form__input.product-form__input--dropdown {
     flex: 0 0 50%;
   }
@@ -1543,4 +1543,19 @@ a.product__text {
 
 .extra-information .content span.plane svg{
   transform: rotate(45deg);
+}
+
+@media screen and (max-width: 749px) {
+  .product .slider.slider--mobile {
+    scroll-padding-left: 0;
+    column-gap: 0;
+  }
+
+  .product__media-list .product__media-item {
+    width: 100%;
+  }
+
+  .product__media-wrapper {
+    margin-bottom: 5rem;
+  }
 }

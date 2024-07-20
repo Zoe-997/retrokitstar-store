@@ -253,3 +253,10 @@
     display: list-item;
   }
 }
+
+@media screen and (max-width: 749px) {
+  .multicolumn .multicolumn-card {
+    max-width: calc(100% - 3rem);
+    margin: 0 auto;
+  }
+}

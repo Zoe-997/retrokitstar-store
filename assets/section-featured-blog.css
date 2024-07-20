@@ -30,6 +30,10 @@
   .blog__post.article {
     width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
   }
+
+  .blog__posts .card-wrapper .card__content{
+    padding: 0 1.5rem;
+  }
 }
 
 .background-secondary .blog-placeholder__content {
