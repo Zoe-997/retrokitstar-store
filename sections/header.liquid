@@ -297,7 +297,11 @@
           endif
         -%}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        <span>{{ cart.currency.symbol }}{{ 'sections.header.cart_count' | t: count: cart.items_subtotal_price }}</span>
+        {%- assign cart_total = cart.items_subtotal_price -%}
+        {%- if cart_total == 0 -%}
+          {%- assign cart_total = '0.00' -%}
+        {%- endif -%}
+        <span>{{ cart.currency.symbol }}{{ 'sections.header.cart_count' | t: count: cart_total }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}

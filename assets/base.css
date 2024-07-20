@@ -99,6 +99,7 @@
   align-items: flex-start;
 }
 
+.items-middle,
 .items-center {
   align-items: center;
 }
@@ -3095,6 +3096,9 @@ details-disclosure > details {
 
 .content-container.no-border {
   border-width: 0;
+}
+
+.content-container.rick-text-2 {
   padding: 0;
 }
 
