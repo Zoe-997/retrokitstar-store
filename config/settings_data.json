@@ -94,7 +94,7 @@
     "drawer_shadow_blur": 5,
     "badge_position": "top left",
     "badge_corner_radius": 0,
-    "sale_badge_color_scheme": "scheme-150bb4a8-ddb6-4837-b0b3-52335bec00a4",
+    "sale_badge_color_scheme": "scheme-42879f70-f39f-46bb-ac7e-85ca271ed384",
     "sold_out_badge_color_scheme": "scheme-3",
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -258,6 +258,17 @@
           "button_label": "#ffffff",
           "secondary_button_label": "#282c40",
           "shadow": "#282c40"
+        }
+      },
+      "scheme-42879f70-f39f-46bb-ac7e-85ca271ed384": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#08aa00",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
         }
       }
     }

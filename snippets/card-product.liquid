@@ -203,6 +203,11 @@
                 </span>
               </p>
             {%- endif -%}
+            <div
+              class="trustshop-collection-rating--item"
+              rating-value="{{ card_product.metafields.trustshop_reviews.stars_review.value.average_review }}"
+              rating-count="{{ card_product.metafields.trustshop_reviews.stars_review.value.total_review }}"
+            ></div>
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {%- if card_product.quantity_price_breaks_configured? -%}

@@ -713,3 +713,9 @@
 .testimonial-card-wrapper {
   color: rgb(var(--color-foreground));
 }
+
+.card-wrapper .card__badge .badge {
+  color: rgb(var(--color-button-text));
+  background-color: rgb(var(--color-button));
+  border-color: rgb(var(--color-button));
+}
