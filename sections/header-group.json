@@ -23,6 +23,7 @@
         },
         "announcement_MXhJar": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "info@retrokitstar.net",
             "link": "mailto:info@retrokitstar.net"
