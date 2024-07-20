@@ -71,12 +71,6 @@
             "extra_content": "",
             "extra_icon": "none"
           }
-        },
-        "trustshop_product_reviews_widget_product_rating_QkzRRN": {
-          "type": "shopify:\/\/apps\/trustshop-product-reviews\/blocks\/widget-product-rating\/18b0c4cc-5411-4b6e-922d-34fdc2f30ab9",
-          "settings": {
-            "selected_product": ""
-          }
         }
       },
       "block_order": [
@@ -88,8 +82,7 @@
         "variant_picker",
         "buy_buttons_FBbFch",
         "extra_info_Xzihc6",
-        "extra_info_EkXi9M",
-        "trustshop_product_reviews_widget_product_rating_QkzRRN"
+        "extra_info_EkXi9M"
       ],
       "settings": {
         "enable_sticky_info": true,
